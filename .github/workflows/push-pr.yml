@@ -1,0 +1,29 @@
+on:
+    push:
+        branches:
+            - main
+            - "release/**"
+        path:
+            - "src/**"
+            - "test/**"
+            - "package.json"
+            - "package-lock.json"
+    pull_request:
+        branches:
+            - main
+            - "release/**"
+        path:
+            - "src/**"
+            - "test/**"
+            - "package.json"
+            - "package-lock.json"
+
+jobs:
+    test : 
+      runs-on: ubuntu-latest
+      steps:
+        - name : Checkout repository # git clone our code
+          uses : actions/checkout@v6.0.2
+         
+        - name : run tests
+          run  : npm install && npm test
