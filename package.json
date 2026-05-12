@@ -1,0 +1,21 @@
+{
+  "name": "ynassibi_gitactions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "bash src/test.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nassibi107/ynassibi_gitActions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Nassibi107/ynassibi_gitActions/issues"
+  },
+  "homepage": "https://github.com/Nassibi107/ynassibi_gitActions#readme"
+}
