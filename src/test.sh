@@ -9,7 +9,7 @@
 
 EXPEXTED="Hello, Test!"
 
-OUTPUT=$(node -e "console.log(require('./src/app').greet('Test!'))")
+OUTPUT=$(node -e "console.log(require('./src/app').greet('Test'))")
 
 if [ "$OUTPUT" = "$EXPEXTED" ]; then
     echo "Test passed!"
